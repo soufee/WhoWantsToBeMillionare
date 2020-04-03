@@ -1,4 +1,4 @@
 .idea
 /target/
 */target/
-*/resources/secret.properties
+/common/src/main/resources/secret.properties

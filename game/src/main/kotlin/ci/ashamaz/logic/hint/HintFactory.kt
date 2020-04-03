@@ -33,17 +33,20 @@ class HintFactory {
                     }
                 }
                 HintType.CALL_FRIEND -> return {q, a->
-                    run { println("call friends ${q.question}") }
+                    run { println("вы выбрали звонок другу")
+                        println("===> Друг: Насколько я помню, это ${q.correctAnswer}")
+                    }
 
                 }
                 HintType.CHANGE_QUESTION -> return {q, a->
-                    run { println("change question ${q.question}") }
+                    run { println("Данная подсказка еще не реализована. Сменить вопрос сейчас нельзя") }
                 }
                 HintType.SPECTATORS_HELP -> return {q, a->
-                    run { println("spectator help ${q.question}") }
-                }
+                    run { println("Вы обратились к аудитории")
+                        println("===> Большинство за ${q.correctAnswer}")
+                    }                }
                 HintType.RIGHT_TO_MISTAKE -> return {q, a->
-                    run { println("RIGHT_TO_MISTAKE ${q.question}") }
+                    run { println("Данная подсказка еще не реализована. Права на ошибку у вас нет") }
                 }
             }
 
