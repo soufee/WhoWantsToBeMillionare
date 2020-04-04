@@ -1,6 +1,5 @@
 package ci.ashamaz
 
-import model.Question
 import org.springframework.context.support.ClassPathXmlApplicationContext
 import ci.ashamaz.util.QuestionCompleter
 
